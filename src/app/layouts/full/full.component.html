@@ -1,0 +1,75 @@
+<mat-sidenav-container
+  class="mainWrapper blue_theme light-theme"
+  [ngClass]="{ 'sidebarNav-mini': isMini, 'sidebarNav-full': !isMini }"
+  autosize
+  autoFocus
+  dir="ltr"
+>
+  <!--   class="mainWrapper blue_theme  light-theme sidebarNav-mini"
+ -->
+  <!-- ============================================================== -->
+  <!-- Vertical Sidebar -->
+  <!-- ============================================================== -->
+
+  <mat-sidenav
+    #leftsidenav
+    [mode]="isOver ? 'over' : 'side'"
+    [opened]="!isOver || !isMini"
+    (openedChange)="onSidenavOpenedChange($event)"
+    (closedStart)="onSidenavClosedStart()"
+    class="sidebarNav"
+  >
+    <app-sidebar></app-sidebar>
+  </mat-sidenav>
+  <!-- ============================================================== -->
+  <!-- Main Content -->
+  <!-- ============================================================== -->
+  <mat-sidenav-content class="contentWrapper">
+    <!-- <app-header 
+      [showToggle]="isOver"
+      (toggleCollapsed)="toggleCollapsed()"
+      (toggleMobileNav)="sidenav.toggle()"
+    ></app-header> -->
+
+    <main class="pageWrapper">
+      <!-- ============================================================== -->
+      <!-- VerticalHeader -->
+      <!-- ============================================================== -->
+
+      <app-header
+        [showToggle]="isOver"
+        (toggleCollapsed)="toggleCollapsed()"
+        (toggleMobileNav)="toggleSidenav(leftsidenav)"
+      ></app-header>
+
+      <div class="pageWrapperBody">
+        <!-- ============================================================== -->
+        <!-- Outlet -->
+        <!-- ============================================================== -->
+        <router-outlet></router-outlet>
+      </div>
+
+      <div class="customizerBtn">
+        <button
+          mat-fab=""
+          color="primary"
+          mat-ripple-loader-class-name="mat-mdc-button-ripple"
+          class="mdc-fab mat-mdc-fab mat-primary mat-mdc-button-base"
+        >
+          <span class="mat-mdc-button-persistent-ripple mdc-fab__ripple"></span
+          ><mat-icon
+            role="img"
+            class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color"
+            aria-hidden="true"
+            data-mat-icon-type="font"
+            >settings</mat-icon
+          ><span class="mdc-button__label"></span
+          ><span class="mat-mdc-focus-indicator"></span
+          ><span class="mat-mdc-button-touch-target"></span
+          ><span class="mat-ripple mat-mdc-button-ripple"></span>
+        </button>
+      </div>
+      
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>

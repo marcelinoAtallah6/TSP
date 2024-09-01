@@ -1,0 +1,195 @@
+<mat-toolbar class="topbar">
+  <!-- Mobile Menu -->
+  <button mat-icon-button (click)="toggleMobileNav.emit()" *ngIf="!showToggle">
+    <i-tabler name="menu-2" class="icon-20 d-flex"></i-tabler>
+  </button>
+
+  <!-- Menus + Sub Menus -->
+
+  <div class="d-none d-lg-flex">
+    <ng-container *ngFor="let item of menuItems">
+
+      <ng-container *ngIf="!item.link">
+        <button
+          mat-button
+          [matMenuTriggerFor]="appsMenu" 
+          [attr.aria-label]="item.label"
+          class="mat-mdc-menu-trigger mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base"
+          mat-ripple-loader-class-name="mat-mdc-button-ripple"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <span class="mdc-button__label">
+            <div class="d-flex align-items-center">
+              {{ item.label }}
+              <i-tabler *ngIf="item.icon" [name]="item.icon" class="icon-16 m-l-4"></i-tabler>
+            </div>
+          </span>
+          <span class="mat-mdc-focus-indicator"></span>
+          <span class="mat-mdc-button-touch-target"></span>
+          <span class="mat-ripple mat-mdc-button-ripple"></span>
+        </button>
+      </ng-container>
+
+      
+
+      <!-- <ng-container *ngIf="!item.link">
+        <button
+          mat-button
+          [attr.aria-label]="item.label"
+          class="mat-mdc-menu-trigger mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base"
+          mat-ripple-loader-class-name="mat-mdc-button-ripple"
+          aria-haspopup="menu"
+          aria-expanded="false"
+        >
+          <span class="mdc-button__label">
+            <div class="d-flex align-items-center">
+              {{ item.label }}
+              <i-tabler
+                *ngIf="item.icon"
+                [name]="item.icon"
+                class="icon-16 m-l-4"
+              ></i-tabler>
+            </div>
+          </span>
+          <span class="mat-mdc-focus-indicator"></span>
+          <span class="mat-mdc-button-touch-target"></span>
+          <span class="mat-ripple mat-mdc-button-ripple"></span>
+        </button>
+      </ng-container> -->
+
+      <ng-container *ngIf="item.link">
+        <a
+          mat-button
+          mat-ripple-loader-class-name="mat-mdc-button-ripple"
+          class="mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base"
+          [href]="item.link"
+        >
+          <span class="mdc-button__label">{{ item.label }}</span>
+          <span class="mat-mdc-focus-indicator"></span>
+          <span class="mat-mdc-button-touch-target"></span>
+          <span class="mat-ripple mat-mdc-button-ripple"></span>
+        </a>
+      </ng-container>
+    </ng-container>
+  </div>
+
+  <mat-menu #appsMenu="matMenu" class="apps-dd cardWithShadow mat-elevation-z8 mat-menu-after mat-menu-below">
+    <div class="row">
+      <div class="col-sm-8 b-r-1 p-r-0">
+        <div class="p-32 p-b-0">
+          <div class="row">
+            <div class="col-sm-6 text-hover-primary" *ngFor="let app of subMenuItems">
+              <a class="d-flex align-items-center text-decoration-none m-b-24" [href]="app.link">
+                <span class="text-primary bg-light-primary rounded icon-40 d-flex align-items-center justify-content-center">
+                  <img width="20" [src]="app.icon" />
+                </span>
+                <div class="m-l-16">
+                  <h5 class="f-s-14 f-w-600 m-0 textprimary mat-subtitle-1 hover-text">
+                    {{ app.name }}
+                  </h5>
+                  <span class="mat-body-1 f-s-12">{{ app.description }}</span>
+                </div>
+              </a>
+            </div>
+            <!-- More dynamic app items can be added here -->
+          </div>
+        </div>
+        <!-- Quick Links Section -->
+        <div class="b-t-1 p-24 d-none d-lg-flex align-items-center justify-content-between">
+          <span class="d-flex align-items-center mat-subtitle-1 f-s-16 f-w-500">
+            <i-tabler name="help" class="icon-20 m-r-8"></i-tabler> Frequently Asked Questions
+          </span>
+          <a mat-flat-button color="primary" class="mdc-button mdc-button--unelevated mat-mdc-unelevated-button mat-primary mat-mdc-button-base" href="/theme-pages/faq">
+            <span class="mdc-button__label">Check</span>
+          </a>
+        </div>
+      </div>
+      <!-- Quick Links Column -->
+      <div class="col-sm-4">
+        <div class="p-x-16 p-y-32">
+          <h4 class="f-s-18 f-w-600 mat-subtitle-1 m-b-16">Quick Links</h4>
+          <div class="text-hover-primary" *ngFor="let link of quickLinks">
+            <a class="hover-text text-decoration-none mat-body-1 f-w-600 d-block p-y-8" [href]="link.url">{{ link.label }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-menu>
+
+  
+
+
+  <!-- --------------------------------------------------------------- -->
+
+  <!-- --------------------------------------------------------------- -->
+  <!-- Notification Dropdown -->
+  <!-- --------------------------------------------------------------- -->
+
+  <button mat-icon-button aria-label="Notifications">
+    <i-tabler
+      class="d-flex"
+      name="bell"
+      matBadge="1"
+      matBadgeColor="primary"
+    ></i-tabler>
+  </button>
+
+  <span class="flex-1-auto"></span>
+  
+  <!-- --------------------------------------------------------------- -->
+  <!-- profile Dropdown -->
+  <!-- --------------------------------------------------------------- -->
+   
+  <a
+    mat-flat-button
+    color="primary"
+    href="https://adminmart.com/product/modernize-angular-admin-dashboard/"
+    target="_blank"
+    class="d-flex justify-content-center"
+  >
+    Marcelino
+  </a>
+  <button
+    mat-icon-button
+    [matMenuTriggerFor]="profilemenu"
+    aria-label="Notifications"
+  >
+    <img
+      src="/assets/images/profile/user-1.jpg"
+      class="rounded-circle object-cover"
+      width="55"
+      style="z-index: 99"
+    />
+  </button>
+  <mat-menu #profilemenu="matMenu" class="topbar-dd cardWithShadow">
+    <button mat-menu-item>
+      <mat-icon class="d-flex align-items-center"
+        ><i-tabler name="user" class="icon-18 d-flex"></i-tabler></mat-icon
+      >My Profile
+    </button>
+    <button mat-menu-item>
+      <mat-icon class="d-flex align-items-center"
+        ><i-tabler name="mail" class="icon-18 d-flex"></i-tabler></mat-icon
+      >My Account
+    </button>
+    <button mat-menu-item>
+      <mat-icon class="d-flex align-items-center"
+        ><i-tabler
+          name="list-check"
+          class="icon-18 d-flex"
+        ></i-tabler></mat-icon
+      >My Task
+    </button>
+
+    <div class="p-x-12 m-t-12">
+      <a
+        [routerLink]="['/authentication/login']"
+        mat-stroked-button
+        color="primary"
+        class="w-100"
+        >Logout</a
+      >
+    </div>
+  </mat-menu>
+</mat-toolbar>
