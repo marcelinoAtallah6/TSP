@@ -16,6 +16,7 @@ export class FullComponent implements OnInit {
 
   @ViewChild('leftsidenav')
   public sidenav: MatSidenav | any;
+  @ViewChild('sidenav') customizeSidenav!: MatSidenav;
 
   //get options from service
   private layoutChangesSubscription = Subscription.EMPTY;
@@ -26,6 +27,8 @@ export class FullComponent implements OnInit {
   public isOpened = false;
 
   isMini: boolean = true;  // Tracks if the sidenav is in mini (collapsed) state
+  sCustomizeSidenav: boolean = true;  
+
   get isOver(): boolean {
     return this.isMobileScreen;
   }
@@ -90,6 +93,25 @@ export class FullComponent implements OnInit {
       // sidenav.close();
       sidenav.isOver = false;
     }
+  }
+  // @ViewChild('sidenav') sidenav!: MatSidenav;
+
+  toggleCustomizeSidenav(sidenav:any) {
+
+    if (this.sCustomizeSidenav || !sidenav.opened) {
+      // this.isMini = false;  // Set to full state
+      // sidenav.open();       // Open the sidenav
+      // sidenav.isOver = true;
+      this.customizeSidenav.toggle();
+
+
+    } else {
+      // If it's fully opened, collapse to mini state
+      this.sCustomizeSidenav = true;
+
+
+    }
+
   }
 
 

@@ -21,6 +21,21 @@
   >
     <app-sidebar></app-sidebar>
   </mat-sidenav>
+
+
+  <mat-sidenav #sidenav mode="over" position="end" class="mat-drawer mat-sidenav" role="dialog">
+    <div cdkscrollable class="mat-drawer-inner-container">
+      <div class="p-x-16 p-y-20 d-flex align-items-center justify-content-between">
+        <h3 class="mat-subtitle-1 f-s-21 f-w-600">Settings</h3>
+        <button mat-button (click)="sidenav.close()">Close</button>
+      </div>
+      <mat-divider></mat-divider>
+      <app-customizer></app-customizer>
+    </div>
+  </mat-sidenav>
+
+
+
   <!-- ============================================================== -->
   <!-- Main Content -->
   <!-- ============================================================== -->
@@ -49,8 +64,9 @@
         <router-outlet></router-outlet>
       </div>
 
+
       <div class="customizerBtn">
-        <button
+        <button  (click)="toggleCustomizeSidenav(sidenav)"
           mat-fab=""
           color="primary"
           mat-ripple-loader-class-name="mat-mdc-button-ripple"
@@ -71,5 +87,7 @@
       </div>
       
     </main>
+
+
   </mat-sidenav-content>
 </mat-sidenav-container>
