@@ -46,7 +46,8 @@
   width: 80px !important;
   flex-shrink: 0;
   transition: swift-ease-out(width);
-  position: absolute;
+  // position: absolute;
+  position: fixed;
   overflow-x: hidden;
   transition: width 0.3s ease;
 }

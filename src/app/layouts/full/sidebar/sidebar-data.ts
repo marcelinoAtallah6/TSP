@@ -31,7 +31,37 @@ export const navItems: NavItem[] = [
     displayName: 'Menu',
     iconName: 'layout-navbar-expand',
     route: '/ui-components/menu',
+  },  {
+    displayName: 'Menu',
+    iconName: 'layout-navbar-expand',
+    route: '/ui-components/menu',
   },
+  {
+    displayName: 'Menu',
+    iconName: 'layout-navbar-expand',
+    route: '/ui-components/menu',
+  },
+  {
+    displayName: 'Menu',
+    iconName: 'layout-navbar-expand',
+    route: '/ui-components/menu',
+  },
+  {
+    displayName: 'Menu',
+    iconName: 'layout-navbar-expand',
+    route: '/ui-components/menu',
+  },
+  {
+    displayName: 'Menu',
+    iconName: 'layout-navbar-expand',
+    route: '/ui-components/menu',
+  },
+  {
+    displayName: 'Menu',
+    iconName: 'layout-navbar-expand',
+    route: '/ui-components/menu',
+  },
+  
   {
     displayName: 'Tooltips',
     iconName: 'tooltip',
