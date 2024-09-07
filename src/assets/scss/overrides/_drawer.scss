@@ -1,9 +1,10 @@
 .mat-drawer {
-  background-color: $sidebarbg;
+  background-color: var(--sidebarbg);
+  position: fixed !important;
 }
 
 .mat-drawer-container {
-  background-color: $background;
+  background-color: var(--background);
 }
 
 

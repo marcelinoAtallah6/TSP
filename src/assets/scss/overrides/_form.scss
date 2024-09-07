@@ -4,17 +4,17 @@
   .mdc-notched-outline__leading,
   .mdc-notched-outline__trailing,
   .mdc-notched-outline__notch {
-    border-color: $borderColor !important;
+    border-color: var(--borderColor) !important;
   }
 
   .mdc-notched-outline .mdc-notched-outline__leading {
-    border-top-left-radius: $border-radius;
-    border-bottom-left-radius: $border-radius;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
   }
 
   .mdc-notched-outline .mdc-notched-outline__trailing {
-    border-top-right-radius: $border-radius;
-    border-bottom-right-radius: $border-radius;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
   }
 }
 

@@ -7,15 +7,28 @@
 .mdc-fab.mat-primary,
 .mdc-fab.mat-accent,
 .mdc-fab.mat-warn {
-  color: white;
+  color: var(--white);
+  --mdc-filled-button-container-color : var(--primary) !important;
+  --mat-badge-background-color : var(--primary) !important;
+--mat-badge-text-color: var(--white) !important;
+}
+
+.mat-mdc-fab.mat-primary
+{
+  --mdc-fab-container-color: var(--primary) !important;
+}
+
+.mat-mdc-icon-button.mat-mdc-button-base{
+  --mat-badge-background-color : var(--primary) !important;
+  --mat-badge-text-color: var(--white) !important;
 }
 
 .mdc-button {
-  border-radius: $border-radius;
+  border-radius: var(--border-radius);
 }
 
 .mat-mdc-raised-button {
-  box-shadow: $cardshadow;
+  box-shadow: var(--cardshadow);
 }
 
 .mat-mdc-fab,

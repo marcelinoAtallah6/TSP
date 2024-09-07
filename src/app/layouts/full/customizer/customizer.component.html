@@ -10,7 +10,7 @@
 
 <mat-button-toggle-group class="mat-button-toggle-group customizer-button-group" role="radiogroup" aria-disabled="false">
   <mat-button-toggle role="presentation" class="mat-button-toggle mat-button-toggle-appearance-standard" id="mat-button-toggle-31">
-    <button type="button" class="mat-button-toggle-button mat-focus-indicator" id="mat-button-toggle-31-button" role="radio" tabindex="0" aria-checked="true" name="mat-button-toggle-group-25">
+    <button  (click)="toggleLightMode()"  type="button" class="mat-button-toggle-button mat-focus-indicator" id="mat-button-toggle-31-button" role="radio" tabindex="0" aria-checked="true" name="mat-button-toggle-group-25">
       <span class="mat-button-toggle-label-content">
         <div class="d-flex align-items-center f-w-500">
           <i-tabler name="sun-high" class="d-flex m-r-8 fill-icon">
@@ -24,7 +24,7 @@
     <span class="mat-ripple mat-button-toggle-ripple"></span>
   </mat-button-toggle>
   <mat-button-toggle role="presentation" class="mat-button-toggle mat-button-toggle-appearance-standard" id="mat-button-toggle-32">
-    <button type="button" class="mat-button-toggle-button mat-focus-indicator" id="mat-button-toggle-32-button" role="radio" tabindex="-1" aria-checked="false" name="mat-button-toggle-group-25">
+    <button (click)="toggleDarkMode()" type="button" class="mat-button-toggle-button mat-focus-indicator" id="mat-button-toggle-32-button" role="radio" tabindex="-1" aria-checked="false" name="mat-button-toggle-group-25">
       <span class="mat-button-toggle-label-content">
         <div class="d-flex align-items-center f-w-500">
           <i-tabler name="moon" class="d-flex m-r-8 fill-icon">
@@ -41,13 +41,39 @@
 
   <!-- Theme Colors -->
   <h6 class="f-s-16 f-w-600 mat-subtitle-1 m-b-16 m-t-24 p-t-16">Theme Colors</h6>
-  <mat-button-toggle-group  class="mat-button-toggle-group customizer-button-group" [value]="selectedColor" (change)="onColorChange($event.value)">
+  <!-- <mat-button-toggle-group  class="mat-button-toggle-group customizer-button-group" [value]="selectedColor" (change)="onColorChange($event.value)">
     <mat-button-toggle  class="mat-button-toggle mat-button-toggle-appearance-standard"  *ngFor="let color of themeColors" [value]="color">
       <span matTooltip="{{color}}_theme" class="theme-circle {{color}}">
         <i-tabler *ngIf="selectedColor === color" name="check" class="icon-16 theme-icon"></i-tabler>
       </span>
     </mat-button-toggle>
-  </mat-button-toggle-group>
+  </mat-button-toggle-group> -->
+
+  <mat-button-toggle-group
+  class="mat-button-toggle-group customizer-button-group"
+  [value]="selectedColor"
+  (change)="onColorChange($event.value)">
+  
+  <!-- Loop through themeColors array -->
+  <mat-button-toggle
+    class="mat-button-toggle mat-button-toggle-appearance-standard"
+    *ngFor="let color of themeColors"
+    [value]="color.value">
+    
+    <!-- Apply class if it's a named color, or use inline styles for custom colors -->
+    <span 
+      matTooltip="{{color.name}}_theme"
+      class="theme-circle"
+      [ngClass]="{'blue': color.value === 'blue', 'aqua': color.value === 'aqua', 'purple': color.value === 'purple'}"
+      [ngStyle]="{'background-color': color.value.startsWith('#') ? color.value : null}">
+      
+      <!-- Icon displayed if selected color matches -->
+      <i-tabler *ngIf="selectedColor === color.value" name="check" class="icon-16 theme-icon"></i-tabler>
+    </span>
+  </mat-button-toggle>
+
+</mat-button-toggle-group>
+
 
   <!-- Theme Direction -->
   <h6 class="f-s-16 f-w-600 mat-subtitle-1 m-b-16 m-t-24">Theme Direction</h6>

@@ -2,62 +2,112 @@
 
 // font
 $font-family: 'Plus Jakarta Sans', sans-serif;
+:root {
+   
 
 // light color variable
-$sidebarbg: white;
-$background: white;
-$cardbg: white;
-$toolbar: white;
-$cardshadow: rgb(145 158 171 / 30%) 0px 0px 2px 0px, rgb(145 158 171 / 12%) 0px 12px 24px -4px;
-$hoverBgColor: #f6f9fc;
+    --sidebarbg: white;
+    --background: white;
+    --toolbar: white;
+    --cardbg: white;
+    --cardshadow: rgb(145 158 171 / 30%) 0px 0px 2px 0px, rgb(145 158 171 / 12%) 0px 12px 24px -4px;
+    --hoverBgColor: #f6f9fc;
 
-// Dark color variable
-$darksidebarbg: #2a3447;
-$darkbackground: #2a3447;
-$darkcardbg: #2a3447;
-$darktoolbar: #2a3447;
-$darkcardshadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px, rgba(145, 158, 171, 0.02) 0px 12px 24px -4px;
-$darkborderColor: #333f55;
-$darkformborderColor: #465670;
-$darkhoverbgcolor: #333f55;
-$darkthemelightprimary: #253662;
-$darkthemelightaccent: #1C455D;
-$darkthemelightwarning: #4D3A2A;
-$darkthemelighterror: #4B313D;
-$darkthemelightsuccess: #1B3C48;
+     /* Dark Mode Colors */
+  --darksidebarbg: #2a3447;
+  --darkbackground: #2a3447;
+  --darkcardbg: #2a3447;
+  --darktoolbar: #2a3447;
+  --darkcardshadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px, rgba(145, 158, 171, 0.02) 0px 12px 24px -4px;
+  --darkborderColor: #333f55;
+  --darkformborderColor: #465670;
+  --darkhoverbgcolor: #333f55;
+  --darkthemelightprimary: #253662;
+  --darkthemelightaccent: #1C455D;
+  --darkthemelightwarning: #4D3A2A;
+  --darkthemelighterror: #4B313D;
+  --darkthemelightsuccess: #1B3C48;
 
-// Sidenav
-$sidenav-desktop: 270px !default;
-$sidenav-mini: 80px !default;
-$header-height: 70px !default;
+  /* Light Mode Colors */
+  --primary: #5d87ff;
+  --accent: #49beff;
+  --warning: #ffae1f;
+  --error: #fa896b;
+  --success: #13deb9;
+  --white: #ffffff;
+
+  --light-primary: #ecf2ff;
+  --light-accent: #e8f7ff;
+  --light-warning: #fef5e5;
+  --light-error: #fdede8;
+  --light-success: #e6fffa;
+
+  /* General Colors */
+  --borderColor: #e5eaef;
+  --borderformColor: #dfe5ef;
+  --light: #f2f6fa;
+  --gray-100: #7c8fac;
+
+  /* Layout */
+  --sidenav-desktop: 270px;
+  --sidenav-mini: 80px;
+  --header-height: 70px;
+  --boxedWidth: 1500px;
+
+  /* Border and text */
+  --border-radius: 7px;
+  --textPrimary: #2a3547;
+
+  }
 
 
-//BorderColor
-$borderColor: #e5eaef;
-$borderformColor: #dfe5ef;
+// // Dark color variable
+// $darksidebarbg: #2a3447;
+// $darkbackground: #2a3447;
+// $darkcardbg: #2a3447;
+// $darktoolbar: #2a3447;
+// $darkcardshadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px, rgba(145, 158, 171, 0.02) 0px 12px 24px -4px;
+// $darkborderColor: #333f55;
+// $darkformborderColor: #465670;
+// $darkhoverbgcolor: #333f55;
+// $darkthemelightprimary: #253662;
+// $darkthemelightaccent: #1C455D;
+// $darkthemelightwarning: #4D3A2A;
+// $darkthemelighterror: #4B313D;
+// $darkthemelightsuccess: #1B3C48;
 
-// custom
-$primary: #5d87ff;
-$accent: #49beff;
-$warning: #ffae1f;
-$error: #fa896b;
-$success: #13deb9;
-$white: #ffffff;
+// // Sidenav
+// F: 270px !default;
+// $sidenav-mini: 80px !default;
+// $header-height: 70px !default;
 
-$light: #f2f6fa;
 
-$gray-100:  #7c8fac;
+// //BorderColor
+// var(--borderColor): #e5eaef;
+// var(--borderformColor): #dfe5ef;
 
-$light-primary: #ecf2ff;
-$light-accent: #e8f7ff;
-$light-warning: #fef5e5;
-$light-error: #fdede8;
-$light-success: #e6fffa;
+// // custom
+// var(--primary): #5d87ff;
+// var(--accent): #49beff;
+// $warning: #ffae1f;
+// ar(--error): #fa896b;
+// $success: #13deb9;
+// $white: #ffffff;
 
-// layout
-$boxedWidth: 1200px;
+// $light: #f2f6fa;
 
-$border-radius: 7px;
+// $gray-100:  #7c8fac;
 
-// text color
-$textPrimary: #2a3547;
+// $light-primary: #ecf2ff;
+// $light-accent: #e8f7ff;
+// $light-warning: #fef5e5;
+// $light-error: #fdede8;
+// $light-success: #e6fffa;
+
+// // layout
+// $boxedWidth: 1500px;
+
+// $border-radius: 7px;
+
+// // text color
+// var(--textPrimary): #2a3547;

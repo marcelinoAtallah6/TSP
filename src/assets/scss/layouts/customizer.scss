@@ -8,8 +8,9 @@
 
 /* Adjust border for the active/checked button */
 .customizer-button-group .mat-button-toggle.mat-button-toggle-checked {
-    background-color: $background; /* Background color for checked state */
+    background-color: var(--background); /* Background color for checked state */
 }
+
 
 /* Hover effect for each button */
 .customizer-button-group .mat-button-toggle:hover {
@@ -30,8 +31,8 @@
 }
 
 .customizer-button-group .mat-button-toggle-appearance-standard.mat-button-toggle-checked i-tabler.fill-icon {
-    color: #5d87ff;
-    fill: #ecf2ff;
+    color: var(--primary);
+    fill: var(--white);
 }
 
 .mat-button-toggle-standalone, .mat-button-toggle-group {

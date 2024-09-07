@@ -48,7 +48,7 @@
     width: 100px;
     top: 50%;
     height: 1px;
-    background: $borderColor;
+    background: var(--borderColor);
   }
   &:after {
     content: "";
@@ -57,7 +57,7 @@
     width: 100px;
     top: 50%;
     height: 1px;
-    background: $borderColor;
+    background: var(--borderColor);
   }
 }
 

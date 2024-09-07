@@ -11,5 +11,6 @@ html {
 }
 
 .topbar {
-  background-color: $toolbar;
+  background-color: var(--toolbar);
+  // position: fixed !important;
 }

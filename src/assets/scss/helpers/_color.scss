@@ -12,28 +12,28 @@
   }
 }
 
-@include syntax-colors(
-  $primary: $primary,
-  $accent: $accent,
-  $success: $success,
-  $warning: $warning,
-  $error: $error,
-  $white: $white,
-  $light: $light,
-  $gray-100: $gray-100,
-  $light-error: $light-error,
-  $light-accent: $light-accent,
-  $light-success: $light-success,
-  $light-warning: $light-warning,
-  $light-primary: $light-primary
-);
+// @include syntax-colors(
+//   var(--primary): var(--primary),
+//   var(--accent): var(--accent),
+//   $success: $success,
+//   $warning: $warning,
+//   ar(--error): ar(--error),
+//   var(--white): var(--white),
+//   $light: $light,
+//   $gray-100: $gray-100,
+//   $light-error: $light-error,
+//   $light-accent: $light-accent,
+//   $light-success: $light-success,
+//   $light-warning: $light-warning,
+//   $light-primary: $light-primary
+// );
 
 .fill-warning svg {
-  fill: $warning;
-  color: $warning;
+  fill: var(--warning);
+  color: var(--warning);
 }
 
 .fill-light svg {
-  fill: $light;
-  color: $light;
+  fill: var(--light);
+  color: var(--light);
 }

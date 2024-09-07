@@ -6,14 +6,14 @@
 
 body {
   font-family: $font-family;
-  color: $textPrimary;
+  color: var(--textPrimary);
   font-size: 14px;
   line-height: 1.334rem;
   margin: 0;
 }
 
 html .mat-drawer-container {
-  background-color: $white;
+  background-color: var(--white);
 }
 
 .mainWrapper {
@@ -24,11 +24,18 @@ html .mat-drawer-container {
   height: 100%;
 }
 
+.mat-drawer-inner-container 
+{
+  overflow-x: hidden !important;
+}
+
 .pageWrapperBody{
-  padding: 5px;
+  padding: 15px;
   min-height: calc(100vh - 38px);
   margin: 0 auto;
-  max-width: $boxedWidth;
+  max-width: var(--boxedWidth);
+  overflow-x: hidden !important;
+  margin: 5px auto;
 }
 
 
@@ -36,21 +43,20 @@ html .mat-drawer-container {
 //   padding: 15px;
 //   min-height: calc(100vh - 70px);
 //   margin: 0 auto;
-//   max-width: $boxedWidth;
+//   max-width: var(--boxedWidth);
 // }
 
 .pageWrapper {
   // padding: 15px;
   min-height: calc(100vh - 70px); /* Adjusts the height to account for the fixed topbar */
   margin: 0 auto;
-  // max-width: $boxedWidth;
+  // max-width: var(--boxedWidth);
   // margin-top: 70px; /* Ensures the content starts below the topbar */
 }
 
 // // .pageWrapper .maxWidth{
-//   max-width: $boxedWidth;
+//   max-width: var(--boxedWidth);
 // }
-
 
 .pageWrapper  .customizerBtn {
   position: fixed;
@@ -72,7 +78,7 @@ html .mat-drawer-container {
 }
 
 .rounded {
-  border-radius: $border-radius !important;
+  border-radius: var(--border-radius) !important;
 }
 
 .rounded-circle {
@@ -113,3 +119,37 @@ html .mat-drawer-container {
   cursor: pointer;
 }
 
+
+.customizerNav {
+  .customizer-button-group {
+    gap: 16px;
+  }
+
+  .theme-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &.blue { background-color: #2196f3; }
+    &.aqua { background-color: #00ffff; }
+    &.purple { background-color: #9c27b0; }
+    &.green { background-color: #4caf50; }
+    &.cyan { background-color: #00bcd4; }
+    &.orange { background-color: #ff9800; }
+
+    .theme-icon {
+      display: none;
+    }
+
+    &.selected .theme-icon {
+      display: block;
+    }
+  }
+
+  .fill-icon {
+    fill: currentColor;
+  }
+}

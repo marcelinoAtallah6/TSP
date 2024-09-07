@@ -1,7 +1,7 @@
 // card
 .mat-mdc-card {
   margin-bottom: 30px;
-  border-radius: $border-radius;
+  border-radius: var(--border-radius);
 }
 .mat-mdc-card-header {
   padding: 24px 24px 0;
@@ -12,11 +12,11 @@
 }
 
 .mat-mdc-card {
-  background-color: $cardbg;
+  background-color: var(--cardbg);
 }
 
 .cardWithShadow {
-  box-shadow: $cardshadow !important;
+  box-shadow:var(--cardshadow) !important;
 }
 
 .mat-mdc-card-title {
