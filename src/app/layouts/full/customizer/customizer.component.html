@@ -75,11 +75,7 @@
 </mat-button-toggle-group>
 
 
-  <!-- Theme Direction -->
-
   <h6 class="f-s-16 f-w-600 mat-subtitle-1 m-b-16 m-t-24">Theme Direction</h6>
-
-<!-- Button Toggle Group for Theme Direction -->
 <mat-button-toggle-group
   class="mat-button-toggle-group customizer-button-group"
   name="themeDirection"
@@ -103,26 +99,8 @@
 
 </mat-button-toggle-group>
 
-
-
-  <!-- <h6 class="f-s-16 f-w-600 mat-subtitle-1 m-b-16 m-t-24">Theme Direction</h6>
-  <mat-button-toggle-group  class="mat-button-toggle-group customizer-button-group"  name="themeDirection" aria-label="Theme direction">
-    <mat-button-toggle  class="mat-button-toggle mat-button-toggle-appearance-standard"  value="ltr">
-      <div class="d-flex align-items-center f-w-500">
-        <i-tabler name="text-direction-ltr" class="d-flex m-r-8 fill-icon"></i-tabler>
-        LTR
-      </div>
-    </mat-button-toggle>
-    <mat-button-toggle  class="mat-button-toggle mat-button-toggle-appearance-standard"  value="rtl">
-      <div class="d-flex align-items-center f-w-500">
-        <i-tabler name="text-direction-rtl" class="d-flex m-r-8 fill-icon"></i-tabler>
-        RTL
-      </div>
-    </mat-button-toggle>
-  </mat-button-toggle-group> -->
-
   <!-- Sidebar Type -->
-  <h6 class="f-s-16 f-w-600 mat-subtitle-1 m-b-16 m-t-24 p-t-16">Sidebar Type</h6>
+  <!-- <h6 class="f-s-16 f-w-600 mat-subtitle-1 m-b-16 m-t-24 p-t-16">Sidebar Type</h6>
   <mat-button-toggle-group  class="mat-button-toggle-group customizer-button-group" name="sidebarType" aria-label="Sidebar type">
     <mat-button-toggle  class="mat-button-toggle mat-button-toggle-appearance-standard"  value="full">
       <div class="d-flex align-items-center f-w-500">
@@ -136,7 +114,7 @@
         Minisidebar
       </div>
     </mat-button-toggle>
-  </mat-button-toggle-group>
+  </mat-button-toggle-group> -->
 
   <!-- Layout Type -->
   <h6 class="f-s-16 f-w-600 mat-subtitle-1 m-b-16 m-t-24 p-t-16">Layout Type</h6>
@@ -151,6 +129,23 @@
       <div class="d-flex align-items-center f-w-500">
         <i-tabler name="layout-distribute-horizontal" class="d-flex m-r-8 fill-icon"></i-tabler>
         Horizontal
+      </div>
+    </mat-button-toggle>
+    <!-- Additional layout options go here -->
+  </mat-button-toggle-group>
+
+  <h6 class="f-s-16 f-w-600 mat-subtitle-1 m-b-16 m-t-24 p-t-16">Container Option</h6>
+  <mat-button-toggle-group  class="mat-button-toggle-group customizer-button-group" name="layoutType" aria-label="Layout type">
+    <mat-button-toggle (click)="changeContainerFullWidth()" class="mat-button-toggle mat-button-toggle-appearance-standard"  value="vertical" checked>
+      <div class="d-flex align-items-center f-w-500">
+        <i-tabler name="layout-navbar" class="d-flex m-r-8 fill-icon"></i-tabler>
+        Full
+      </div>
+    </mat-button-toggle>
+    <mat-button-toggle (click)="changeContainerBoxedWidth()"  class="mat-button-toggle mat-button-toggle-appearance-standard"  value="horizontal" checked>
+      <div class="d-flex align-items-center f-w-500">
+        <i-tabler name="layout-sidebar" class="d-flex m-r-8 fill-icon"></i-tabler>
+        Boxed
       </div>
     </mat-button-toggle>
     <!-- Additional layout options go here -->

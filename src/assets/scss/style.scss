@@ -44,6 +44,6 @@
     display: inline-block;
     white-space: nowrap;
     word-wrap: normal;
-    direction: ltr;
+    direction: var(--direction)l;
     -webkit-font-smoothing: antialiased;
   }

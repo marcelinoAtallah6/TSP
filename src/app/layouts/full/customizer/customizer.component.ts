@@ -18,8 +18,6 @@ import { MatDialog } from '@angular/material/dialog';
 export class CustomizerComponent implements OnInit {
   selectedTheme = 'light'; // Default theme
   selectedColor = 'blue'; // Default color
-  //   themeDirection: string = 'ltr'; // Default direction is LTR
-
 
   themeColors = [
     { name: 'blue', value: 'blue' },
@@ -27,7 +25,7 @@ export class CustomizerComponent implements OnInit {
     { name: 'purple', value: 'purple' },
     { name: '#5d87ff', value: '#5d87ff' }
   ];
-  themeDirection: string = 'ltr'; // Default direction is LTR
+  themeDirection: string = 'rtl'; // Default direction is LTR
   darkModeEnabled = false;
 
 
@@ -78,13 +76,26 @@ export class CustomizerComponent implements OnInit {
 
   onDirectionChange(direction: string): void {
     this.themeDirection = direction;
-    
     // Apply the direction to the <html> element
     if (this.themeDirection === 'rtl') {
       this.renderer.setAttribute(document.documentElement, 'dir', 'rtl');
+      document.documentElement.style.setProperty('--direction', this.themeDirection );
     } else {
       this.renderer.setAttribute(document.documentElement, 'dir', 'ltr');
+      document.documentElement.style.setProperty('--direction', this.themeDirection );
     }
   }
 
+  changeContainerFullWidth(){
+
+    document.documentElement.style.setProperty('--boxedWidth', '' );
+  }
+
+
+  changeContainerBoxedWidth(){
+
+    document.documentElement.style.setProperty('--boxedWidth', '1200' );
+
+
+  }
 }

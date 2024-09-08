@@ -2,6 +2,8 @@
 :after,
 :before {
   box-sizing: border-box;
+  direction: var(--direction);
+
 }
 
 body {
@@ -22,6 +24,7 @@ html .mat-drawer-container {
   width: 100%;
   flex: 1;
   height: 100%;
+  direction: var(--direction)  !important;
 }
 
 .mat-drawer-inner-container 
