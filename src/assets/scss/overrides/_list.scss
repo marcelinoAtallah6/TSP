@@ -1,3 +1,13 @@
 .mat-mdc-menu-item:hover:not([disabled]) {
     background: var(--hoverBgColor);
 }
+
+.mat-mdc-menu-item{
+    background: var(--background);
+    color: var(--textPrimary) !important;
+}
+.mat-mdc-menu-item .mat-icon-no-color{
+
+    color: var(--textPrimary) !important;
+
+}

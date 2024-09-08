@@ -5,6 +5,7 @@ import {
   Input,
   ViewEncapsulation,
   OnInit,
+  Renderer2,
 } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 
@@ -17,7 +18,7 @@ import { MatDialog } from '@angular/material/dialog';
 export class CustomizerComponent implements OnInit {
   selectedTheme = 'light'; // Default theme
   selectedColor = 'blue'; // Default color
-  // themeColors = ['blue', 'aqua', 'purple','#5d87ff'];
+  //   themeDirection: string = 'ltr'; // Default direction is LTR
 
 
   themeColors = [
@@ -26,28 +27,22 @@ export class CustomizerComponent implements OnInit {
     { name: 'purple', value: 'purple' },
     { name: '#5d87ff', value: '#5d87ff' }
   ];
-  
+  themeDirection: string = 'ltr'; // Default direction is LTR
   darkModeEnabled = false;
 
 
   toggleDarkMode()
   {
+      this.darkModeEnabled  =true;
+      this.renderer.addClass(document.body, 'dark-mode');
 
-      document.documentElement.style.setProperty('--sidebarbg', '#2a3547');
-      document.documentElement.style.setProperty('--background', '#2a3547');
-      document.documentElement.style.setProperty('--toolbar', '#2a3547');
-      document.documentElement.style.setProperty('--cardbg', '#2a3547');
 
   }
 
   toggleLightMode()
   {
-
-      document.documentElement.style.setProperty('--sidebarbg', 'white');
-      document.documentElement.style.setProperty('--background', 'white');
-      document.documentElement.style.setProperty('--toolbar', 'white');
-      document.documentElement.style.setProperty('--cardbg', 'white');
-
+      this.darkModeEnabled  =false;
+      this.renderer.removeClass(document.body, 'dark-mode')
   }
 
 
@@ -58,7 +53,7 @@ export class CustomizerComponent implements OnInit {
     // Add more themes as needed
   ];
 
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog,private renderer: Renderer2) {}
   ngOnInit(): void {
 
    }
@@ -70,7 +65,26 @@ export class CustomizerComponent implements OnInit {
 
   onColorChange(color: string): void {
     this.selectedColor = color;
-    document.documentElement.style.setProperty('--primary', color);
-    // Apply color change logic here
+    if(this.darkModeEnabled )
+    {
+      document.documentElement.style.setProperty('--primary', this.selectedColor );
+    }
+    else{
+      document.documentElement.style.setProperty('--primary', this.selectedColor );
+
+    }
   }
+
+
+  onDirectionChange(direction: string): void {
+    this.themeDirection = direction;
+    
+    // Apply the direction to the <html> element
+    if (this.themeDirection === 'rtl') {
+      this.renderer.setAttribute(document.documentElement, 'dir', 'rtl');
+    } else {
+      this.renderer.setAttribute(document.documentElement, 'dir', 'ltr');
+    }
+  }
+
 }

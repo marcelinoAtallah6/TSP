@@ -2,9 +2,11 @@
 
 # Compiled output
 /dist
+/node_modules
 /tmp
 /out-tsc
 /bazel-out
+/package-lock.json
 
 # Node
 /node_modules

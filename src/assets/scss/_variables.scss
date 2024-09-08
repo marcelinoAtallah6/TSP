@@ -2,33 +2,18 @@
 
 // font
 $font-family: 'Plus Jakarta Sans', sans-serif;
+
+
 :root {
-   
-
-// light color variable
-    --sidebarbg: white;
-    --background: white;
-    --toolbar: white;
-    --cardbg: white;
-    --cardshadow: rgb(145 158 171 / 30%) 0px 0px 2px 0px, rgb(145 158 171 / 12%) 0px 12px 24px -4px;
-    --hoverBgColor: #f6f9fc;
-
-     /* Dark Mode Colors */
-  --darksidebarbg: #2a3447;
-  --darkbackground: #2a3447;
-  --darkcardbg: #2a3447;
-  --darktoolbar: #2a3447;
-  --darkcardshadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px, rgba(145, 158, 171, 0.02) 0px 12px 24px -4px;
-  --darkborderColor: #333f55;
-  --darkformborderColor: #465670;
-  --darkhoverbgcolor: #333f55;
-  --darkthemelightprimary: #253662;
-  --darkthemelightaccent: #1C455D;
-  --darkthemelightwarning: #4D3A2A;
-  --darkthemelighterror: #4B313D;
-  --darkthemelightsuccess: #1B3C48;
-
-  /* Light Mode Colors */
+  /* Light Mode */
+  --sidebarbg: var(--white);
+  --background: var(--white);
+  --toolbar: var(--white);
+  --cardbg: var(--white);
+  --cardshadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+  --hoverBgColor: #f6f9fc;
+  --textPrimary: #2a3547;
+  
   --primary: #5d87ff;
   --accent: #49beff;
   --warning: #ffae1f;
@@ -36,16 +21,22 @@ $font-family: 'Plus Jakarta Sans', sans-serif;
   --success: #13deb9;
   --white: #ffffff;
 
+    --primary-rgb: 93, 135lo 255; /* equivalent to #5d87ff */
+  --accent-rgb: 73, 190, 255;  /* equivalent to #49beff */
+  --warning-rgb: 255, 174, 31; /* equivalent to #ffae1f */
+  --error-rgb: 250, 137, 107;  /* equivalent to #fa896b */
+  --success-rgb: 19, 222, 185; /* equivalent to #13deb9 */
+
   --light-primary: #ecf2ff;
   --light-accent: #e8f7ff;
   --light-warning: #fef5e5;
   --light-error: #fdede8;
   --light-success: #e6fffa;
 
-  /* General Colors */
+  /* Borders and Text */
   --borderColor: #e5eaef;
   --borderformColor: #dfe5ef;
-  --light: #f2f6fa;
+  --border-radius: 7px;
   --gray-100: #7c8fac;
 
   /* Layout */
@@ -53,61 +44,39 @@ $font-family: 'Plus Jakarta Sans', sans-serif;
   --sidenav-mini: 80px;
   --header-height: 70px;
   --boxedWidth: 1500px;
+}
 
-  /* Border and text */
-  --border-radius: 7px;
-  --textPrimary: #2a3547;
+body.dark-mode {
+  /* Dark Mode */
+  --sidebarbg: #2a3447;
+  --background: #2a3447;
+  --toolbar: #2a3447;
+  --cardbg: #2a3447;
+  --cardshadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px, rgba(145, 158, 171, 0.02) 0px 12px 24px -4px;
+  --hoverBgColor: #333f55;
+  --textPrimary: white;
 
-  }
+  // --primary: #5d87ff;
+  --accent: #49beff;
+  --warning: #ffae1f;
+  --error: #fa896b;
+  --success: #13deb9;
+
+  /* Dark theme light colors */
+  --light-primary: #253662;
+  --light-accent: #1C455D;
+  --light-warning: #4D3A2A;
+  --light-error: #4B313D;
+  --light-success: #1B3C48;
+
+  --borderColor: #333f55;
+  --borderformColor: #465670;
+}
 
 
-// // Dark color variable
-// $darksidebarbg: #2a3447;
-// $darkbackground: #2a3447;
-// $darkcardbg: #2a3447;
-// $darktoolbar: #2a3447;
-// $darkcardshadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px, rgba(145, 158, 171, 0.02) 0px 12px 24px -4px;
-// $darkborderColor: #333f55;
-// $darkformborderColor: #465670;
-// $darkhoverbgcolor: #333f55;
-// $darkthemelightprimary: #253662;
-// $darkthemelightaccent: #1C455D;
-// $darkthemelightwarning: #4D3A2A;
-// $darkthemelighterror: #4B313D;
-// $darkthemelightsuccess: #1B3C48;
-
-// // Sidenav
-// F: 270px !default;
-// $sidenav-mini: 80px !default;
-// $header-height: 70px !default;
 
 
-// //BorderColor
-// var(--borderColor): #e5eaef;
-// var(--borderformColor): #dfe5ef;
 
-// // custom
-// var(--primary): #5d87ff;
-// var(--accent): #49beff;
-// $warning: #ffae1f;
-// ar(--error): #fa896b;
-// $success: #13deb9;
-// $white: #ffffff;
 
-// $light: #f2f6fa;
 
-// $gray-100:  #7c8fac;
 
-// $light-primary: #ecf2ff;
-// $light-accent: #e8f7ff;
-// $light-warning: #fef5e5;
-// $light-error: #fdede8;
-// $light-success: #e6fffa;
-
-// // layout
-// $boxedWidth: 1500px;
-
-// $border-radius: 7px;
-
-// // text color
-// var(--textPrimary): #2a3547;

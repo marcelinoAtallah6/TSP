@@ -15,16 +15,47 @@ html .topbar {
   object-fit: cover;
 }
 
-
-.mat-mdc-menu-panel 
-{
+/* Styles for large menu */
+.large-menu {
   width: 800px !important;
   max-width: 1000px !important;
   overflow: hidden !important;
+
+  background-color: var(--cardbg) !important;
+  color: var(--textPrimary) !important;
+  border: 1px solid var(--borderColor) !important;
 }
 
-.hover-text::hover {
+/* Styles for small menu */
+.small-menu {
+  width: 300px !important;
+  max-width: 1000px !important;
+  overflow: hidden !important;
 
-color: blue;
+  background-color: var(--cardbg) !important;
+  color: var(--textPrimary) !important;
+  border: 1px solid var(--borderColor) !important;
+}
+
+
+
+// .mat-mdc-menu-panel 
+// {
+//   width: 800px !important;
+//   max-width: 1000px !important;
+//   overflow: hidden !important;
+
+//   background-color: var(--cardbg) !important;
+//   color: var(--textPrimary) !important;
+//   border: 1px solid var(--borderColor) !important;
+// }
+
+// :hover:not([disabled]) {
+//   background: var(--hoverBgColor);
+// }
+
+// .hover-text::hover {
+
+// color: blue;
   
-}
+// }

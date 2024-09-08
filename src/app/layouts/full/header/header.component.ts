@@ -77,8 +77,8 @@ import {
     ];
 
       quickLinks = [
-        { label: 'Pricing Page', url: '/theme-pages/pricing' },
-        { label: 'Authentication Design', url: '/authentication/login' },
+        { label: 'Gold Page', url: '/theme-pages/pricing' },
+        { label: 'Gold 2 Page', url: '/authentication/login' },
       ];
 
     constructor(public dialog: MatDialog) {}

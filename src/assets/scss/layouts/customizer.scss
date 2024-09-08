@@ -1,6 +1,6 @@
 /* Ensure the button group has visible borders and space between buttons */
 .customizer-button-group .mat-button-toggle {
-    border: 1px solid #e0e0e0; /* Adjust color as needed */
+    border: 1px solid var(--background); /* Adjust color as needed */
     border-radius: 4px;
     margin: 0 4px; /* Adjust space between buttons */
     transition: all 0.2s ease-in-out;
@@ -18,11 +18,16 @@
     transform: scale(1.05);
 }
 
+.mat-button-toggle-group-appearance-standard .mat-button-toggle-appearance-standard+.mat-button-toggle-appearance-standard
+{
+    border-left: none !important;
+}
+
 /* Remove default styling if needed */
 .mat-button-toggle-appearance-standard {
     border: none; /* Remove default border */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow on hover */
-    background-color: #f7f7f7; /* Background color on hover */
+    background-color: var(--background) !important; /* Background color on hover */
     transition: all 1.05s ease-in-out;
 }
 

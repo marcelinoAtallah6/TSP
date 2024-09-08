@@ -10,7 +10,7 @@
   color: var(--white);
   --mdc-filled-button-container-color : var(--primary) !important;
   --mat-badge-background-color : var(--primary) !important;
---mat-badge-text-color: var(--white) !important;
+  --mat-badge-text-color: var(--white) !important;
 }
 
 .mat-mdc-fab.mat-primary
@@ -21,6 +21,12 @@
 .mat-mdc-icon-button.mat-mdc-button-base{
   --mat-badge-background-color : var(--primary) !important;
   --mat-badge-text-color: var(--white) !important;
+  color:var(--textPrimary) !important;
+}
+
+.mat-mdc-button{
+
+  --mdc-text-button-label-text-color : var(--textPrimary) !important;
 }
 
 .mdc-button {
@@ -41,6 +47,8 @@
 }
 
 .mat-button-toggle-button {
+  color: var(--textPrimary) !important;
+  background-color: var(--background) !important;
   font-size: 14px;
 }
 
