@@ -25,7 +25,8 @@ export class FullComponent implements OnInit {
   private isCollapsedWidthFixed = false;
   private htmlElement!: HTMLHtmlElement;
   public isOpened = false;
-
+  public profileBoxOnHover = false;
+  public profileBoxOnClick = false;
   isMini: boolean = true;  // Tracks if the sidenav is in mini (collapsed) state
   sCustomizeSidenav: boolean = true;  
 
@@ -51,26 +52,52 @@ export class FullComponent implements OnInit {
   ngOnDestroy() {
     this.layoutChangesSubscription.unsubscribe();
   }
+  onSidenavOpenedHoverEnter(){  
+          
+    // Select the element with the class 'profile-box'
+    const profileBox = document.querySelector('.profile-box') as HTMLElement;
+    // Check if the element exists and then apply styles
+    if (this.profileBoxOnHover && !this.profileBoxOnClick) {
+      // Set the display property to 'block'
+      this.profileBoxOnHover = false;
+      profileBox.style.display = '';
+    } else if( !this.profileBoxOnClick){
+      this.profileBoxOnHover = true;
+      profileBox.style.display = 'block';
+    }
+  }
+
+  onSidenavOpenedHoverLeave(){  
+          
+    // Select the element with the class 'profile-box'
+    const profileBox = document.querySelector('.profile-box') as HTMLElement;
+
+    // Check if the element exists and then apply styles
+    if (this.profileBoxOnHover && !this.profileBoxOnClick) {
+      // Set the display property to 'block'
+      this.profileBoxOnHover = false;
+      profileBox.style.display = '';
+    } else if( !this.profileBoxOnClick){
+      this.profileBoxOnHover = true;
+      profileBox.style.display = 'block';
+    }
+  }
+
 
   toggleCollapsed() {
     this.isContentWidthFixed = false;
   }
 
-  // onSidenavClosedStart() {
-  //   this.isContentWidthFixed = false;
-  // }
-
-  // onSidenavOpenedChange(isOpened: boolean) {
-  //   this.isCollapsedWidthFixed = !this.isOver;
-  // }
-
-
   onSidenavOpenedChange(isOpened: boolean) {
+
+
     this.isCollapsedWidthFixed = !this.isOver;
     this.isOpened = isOpened;
     if (isOpened) {
       this.isMini = true; // Open fully
     }
+
+
   }
   onSidenavClosedStart() {
     this.isContentWidthFixed = false;
@@ -80,6 +107,21 @@ export class FullComponent implements OnInit {
   }
 
   toggleSidenav(sidenav: any) {
+
+    // Select the element with the class 'profile-box'
+    const profileBox = document.querySelector('.profile-box') as HTMLElement;
+
+    // Check if the element exists and then apply styles
+    if (this.profileBoxOnClick) {
+      // Set the display property to 'block'
+      this.profileBoxOnClick = false;
+      profileBox.style.display = '';
+    } else {
+      this.profileBoxOnClick = true;
+      profileBox.style.display = 'block';
+    }
+
+
     // If the sidenav is in mini state or closed, open it fully
     if (this.isMini || !sidenav.opened) {
       this.isMini = false;  // Set to full state

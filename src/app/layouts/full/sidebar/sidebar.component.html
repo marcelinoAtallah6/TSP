@@ -3,27 +3,18 @@
   <mat-nav-list class="sidebar-list" >
     <app-nav-item *ngFor="let item of navItems" [item]="item"> </app-nav-item>
   </mat-nav-list>
-  <div class="p-24">
-    <div class="bg-light-primary d-flex align-items-center rounded p-20 m-t-20">
-      <div>
-        <h5 class="mat-subtitle-1 f-s-16 f-w-600 m-b-8">
-          Unlimied <br />Access
-        </h5>
-        <a
-          mat-flat-button
-          color="primary"
-          href=""
-          target="_blank"
-          class="d-flex justify-content-center"
-        >
-          Upgrade
+  <div class="profile-box">
+    <div class="profile-box-content bg-light-accent ">
+      <img src="/assets/images/profile/user-1.jpg" alt="Profile Picture">
+      <div class="profile-info">
+        <h5>Marcelino Atallah</h5>
+        <span>software</span>
+      </div>
+      <div class="profile-actions">
+        <a href="/authentication/login" class="mat-icon-button">
+          <img src="/assets/images/svgs/power.svg" alt="Logout Icon" class="logout-icon">
         </a>
       </div>
-      <img
-        src="/assets/images/backgrounds/rocket.png"
-        alt="imgae"
-        class="side-img"
-      />
     </div>
   </div>
-</div>
+  

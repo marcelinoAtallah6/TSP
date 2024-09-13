@@ -1484,3 +1484,437 @@ TypeError: Cannot read properties of undefined (reading 'startsWith')
     at getNpmLockfileDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:34:12)
 
 [NX Daemon Server] - 2024-09-08T21:06:22.013Z - Error detected when creating a project graph: Failed to create project graph. See above for errors
+[NX Daemon Server] - 2024-09-08T21:14:14.629Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:14:14.632Z - [WATCHER]: src/app/layouts/full/full.component.html was modified
+[NX Daemon Server] - 2024-09-08T21:14:16.001Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:14:21.041Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-09-08T21:14:21.042Z - [REQUEST]: src/app/layouts/full/full.component.html
+[NX Daemon Server] - 2024-09-08T21:14:21.042Z - [REQUEST]: 
+
+ NX   Failed to parse npm lockfile
+
+Please open an issue at `https://github.com/nrwl/nx/issues/new?template=1-bug.yml` and provide a reproduction.
+
+Original error: Cannot read properties of undefined (reading 'startsWith')
+
+
+TypeError: Cannot read properties of undefined (reading 'startsWith')
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:179:32)
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:196:12)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:149:40
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:148:45
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:146:15
+    at Array.forEach (<anonymous>)
+    at getDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:136:39)
+    at getNpmLockfileDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:34:12)
+
+[NX Daemon Server] - 2024-09-08T21:14:21.168Z - Error detected when creating a project graph: Failed to create project graph. See above for errors
+[NX Daemon Server] - 2024-09-08T21:14:36.212Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:14:36.214Z - [WATCHER]: src/app/layouts/full/full.component.ts was modified
+[NX Daemon Server] - 2024-09-08T21:14:37.345Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:14:39.699Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:14:39.795Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:14:39.847Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:14:39.898Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:14:39.951Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:14:40.012Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:14:41.528Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:14:41.890Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:14:42.631Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-09-08T21:14:42.631Z - [REQUEST]: src/app/layouts/full/full.component.ts
+[NX Daemon Server] - 2024-09-08T21:14:42.632Z - [REQUEST]: 
+
+ NX   Failed to parse npm lockfile
+
+Please open an issue at `https://github.com/nrwl/nx/issues/new?template=1-bug.yml` and provide a reproduction.
+
+Original error: Cannot read properties of undefined (reading 'startsWith')
+
+
+TypeError: Cannot read properties of undefined (reading 'startsWith')
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:179:32)
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:196:12)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:149:40
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:148:45
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:146:15
+    at Array.forEach (<anonymous>)
+    at getDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:136:39)
+    at getNpmLockfileDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:34:12)
+
+[NX Daemon Server] - 2024-09-08T21:14:42.775Z - Error detected when creating a project graph: Failed to create project graph. See above for errors
+[NX Daemon Server] - 2024-09-08T21:14:42.892Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:14:42.952Z - [WATCHER]: src/app/layouts/full/full.component.ts was modified
+[NX Daemon Server] - 2024-09-08T21:14:42.999Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:14:43.053Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:14:44.105Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:14:46.227Z - [WATCHER]: src/app/layouts/full/full.component.html was modified
+[NX Daemon Server] - 2024-09-08T21:14:46.228Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:14:49.363Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-09-08T21:14:49.363Z - [REQUEST]: src/app/layouts/full/full.component.ts,src/app/layouts/full/full.component.html
+[NX Daemon Server] - 2024-09-08T21:14:49.363Z - [REQUEST]: 
+
+ NX   Failed to parse npm lockfile
+
+Please open an issue at `https://github.com/nrwl/nx/issues/new?template=1-bug.yml` and provide a reproduction.
+
+Original error: Cannot read properties of undefined (reading 'startsWith')
+
+
+TypeError: Cannot read properties of undefined (reading 'startsWith')
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:179:32)
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:196:12)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:149:40
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:148:45
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:146:15
+    at Array.forEach (<anonymous>)
+    at getDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:136:39)
+    at getNpmLockfileDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:34:12)
+
+[NX Daemon Server] - 2024-09-08T21:14:49.482Z - Error detected when creating a project graph: Failed to create project graph. See above for errors
+[NX Daemon Server] - 2024-09-08T21:15:42.322Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:15:42.324Z - [WATCHER]: src/assets/scss/layouts/customizer.scss was modified
+[NX Daemon Server] - 2024-09-08T21:15:48.732Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-09-08T21:15:48.733Z - [REQUEST]: src/assets/scss/layouts/customizer.scss
+[NX Daemon Server] - 2024-09-08T21:15:48.733Z - [REQUEST]: 
+
+ NX   Failed to parse npm lockfile
+
+Please open an issue at `https://github.com/nrwl/nx/issues/new?template=1-bug.yml` and provide a reproduction.
+
+Original error: Cannot read properties of undefined (reading 'startsWith')
+
+
+TypeError: Cannot read properties of undefined (reading 'startsWith')
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:179:32)
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:196:12)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:149:40
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:148:45
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:146:15
+    at Array.forEach (<anonymous>)
+    at getDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:136:39)
+    at getNpmLockfileDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:34:12)
+
+[NX Daemon Server] - 2024-09-08T21:15:48.790Z - Error detected when creating a project graph: Failed to create project graph. See above for errors
+[NX Daemon Server] - 2024-09-08T21:15:50.070Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:16:58.258Z - [WATCHER]: src/app/layouts/full/customizer/customizer.component.ts was modified
+[NX Daemon Server] - 2024-09-08T21:16:59.855Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:16:59.922Z - [WATCHER]: src/app/layouts/full/customizer/customizer.component.ts was modified
+[NX Daemon Server] - 2024-09-08T21:16:59.923Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:17:01.694Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:17:06.263Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-09-08T21:17:06.263Z - [REQUEST]: src/app/layouts/full/customizer/customizer.component.ts
+[NX Daemon Server] - 2024-09-08T21:17:06.263Z - [REQUEST]: 
+
+ NX   Failed to parse npm lockfile
+
+Please open an issue at `https://github.com/nrwl/nx/issues/new?template=1-bug.yml` and provide a reproduction.
+
+Original error: Cannot read properties of undefined (reading 'startsWith')
+
+
+TypeError: Cannot read properties of undefined (reading 'startsWith')
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:179:32)
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:196:12)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:149:40
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:148:45
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:146:15
+    at Array.forEach (<anonymous>)
+    at getDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:136:39)
+    at getNpmLockfileDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:34:12)
+
+[NX Daemon Server] - 2024-09-08T21:17:06.409Z - Error detected when creating a project graph: Failed to create project graph. See above for errors
+[NX Daemon Server] - 2024-09-08T21:18:02.134Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:18:02.188Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:18:06.820Z - [WATCHER]: src/assets/scss/_container.scss was modified
+[NX Daemon Server] - 2024-09-08T21:18:06.820Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:18:07.069Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:18:07.070Z - [WATCHER]: src/assets/scss/_container.scss was modified
+[NX Daemon Server] - 2024-09-08T21:18:07.246Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:18:07.249Z - [WATCHER]: src/assets/scss/_container.scss was modified
+[NX Daemon Server] - 2024-09-08T21:18:08.864Z - [WATCHER]: src/assets/scss/_container.scss was modified
+[NX Daemon Server] - 2024-09-08T21:18:08.865Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:18:09.033Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:18:09.035Z - [WATCHER]: src/assets/scss/_container.scss was modified
+[NX Daemon Server] - 2024-09-08T21:18:13.221Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-09-08T21:18:13.221Z - [REQUEST]: src/assets/scss/_container.scss
+[NX Daemon Server] - 2024-09-08T21:18:13.221Z - [REQUEST]: 
+
+ NX   Failed to parse npm lockfile
+
+Please open an issue at `https://github.com/nrwl/nx/issues/new?template=1-bug.yml` and provide a reproduction.
+
+Original error: Cannot read properties of undefined (reading 'startsWith')
+
+
+TypeError: Cannot read properties of undefined (reading 'startsWith')
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:179:32)
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:196:12)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:149:40
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:148:45
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:146:15
+    at Array.forEach (<anonymous>)
+    at getDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:136:39)
+    at getNpmLockfileDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:34:12)
+
+[NX Daemon Server] - 2024-09-08T21:18:13.310Z - Error detected when creating a project graph: Failed to create project graph. See above for errors
+[NX Daemon Server] - 2024-09-08T21:18:19.047Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:18:19.106Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:18:37.559Z - [WATCHER]: src/assets/scss/_container.scss was modified
+[NX Daemon Server] - 2024-09-08T21:18:37.559Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:18:43.961Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-09-08T21:18:43.962Z - [REQUEST]: src/assets/scss/_container.scss
+[NX Daemon Server] - 2024-09-08T21:18:43.962Z - [REQUEST]: 
+
+ NX   Failed to parse npm lockfile
+
+Please open an issue at `https://github.com/nrwl/nx/issues/new?template=1-bug.yml` and provide a reproduction.
+
+Original error: Cannot read properties of undefined (reading 'startsWith')
+
+
+TypeError: Cannot read properties of undefined (reading 'startsWith')
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:179:32)
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:196:12)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:149:40
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:148:45
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:146:15
+    at Array.forEach (<anonymous>)
+    at getDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:136:39)
+    at getNpmLockfileDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:34:12)
+
+[NX Daemon Server] - 2024-09-08T21:18:44.080Z - Error detected when creating a project graph: Failed to create project graph. See above for errors
+[NX Daemon Server] - 2024-09-08T21:18:44.305Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:19:06.013Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:19:06.016Z - [WATCHER]: src/assets/scss/_container.scss was modified
+[NX Daemon Server] - 2024-09-08T21:19:11.896Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:19:12.429Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-09-08T21:19:12.429Z - [REQUEST]: src/assets/scss/_container.scss
+[NX Daemon Server] - 2024-09-08T21:19:12.429Z - [REQUEST]: 
+
+ NX   Failed to parse npm lockfile
+
+Please open an issue at `https://github.com/nrwl/nx/issues/new?template=1-bug.yml` and provide a reproduction.
+
+Original error: Cannot read properties of undefined (reading 'startsWith')
+
+
+TypeError: Cannot read properties of undefined (reading 'startsWith')
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:179:32)
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:196:12)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:149:40
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:148:45
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:146:15
+    at Array.forEach (<anonymous>)
+    at getDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:136:39)
+    at getNpmLockfileDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:34:12)
+
+[NX Daemon Server] - 2024-09-08T21:19:12.547Z - Error detected when creating a project graph: Failed to create project graph. See above for errors
+[NX Daemon Server] - 2024-09-08T21:19:19.670Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:19:19.674Z - [WATCHER]: src/assets/scss/_container.scss was modified
+[NX Daemon Server] - 2024-09-08T21:19:19.861Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:19:19.863Z - [WATCHER]: src/assets/scss/_container.scss was modified
+[NX Daemon Server] - 2024-09-08T21:19:26.081Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-09-08T21:19:26.081Z - [REQUEST]: src/assets/scss/_container.scss
+[NX Daemon Server] - 2024-09-08T21:19:26.081Z - [REQUEST]: 
+
+ NX   Failed to parse npm lockfile
+
+Please open an issue at `https://github.com/nrwl/nx/issues/new?template=1-bug.yml` and provide a reproduction.
+
+Original error: Cannot read properties of undefined (reading 'startsWith')
+
+
+TypeError: Cannot read properties of undefined (reading 'startsWith')
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:179:32)
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:196:12)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:149:40
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:148:45
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:146:15
+    at Array.forEach (<anonymous>)
+    at getDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:136:39)
+    at getNpmLockfileDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:34:12)
+
+[NX Daemon Server] - 2024-09-08T21:19:26.163Z - Error detected when creating a project graph: Failed to create project graph. See above for errors
+[NX Daemon Server] - 2024-09-08T21:19:29.746Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:19:43.526Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:19:43.529Z - [WATCHER]: src/app/layouts/full/full.component.html was modified
+[NX Daemon Server] - 2024-09-08T21:19:44.757Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:19:49.938Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-09-08T21:19:49.938Z - [REQUEST]: src/app/layouts/full/full.component.html
+[NX Daemon Server] - 2024-09-08T21:19:49.938Z - [REQUEST]: 
+
+ NX   Failed to parse npm lockfile
+
+Please open an issue at `https://github.com/nrwl/nx/issues/new?template=1-bug.yml` and provide a reproduction.
+
+Original error: Cannot read properties of undefined (reading 'startsWith')
+
+
+TypeError: Cannot read properties of undefined (reading 'startsWith')
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:179:32)
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:196:12)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:149:40
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:148:45
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:146:15
+    at Array.forEach (<anonymous>)
+    at getDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:136:39)
+    at getNpmLockfileDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:34:12)
+
+[NX Daemon Server] - 2024-09-08T21:19:50.084Z - Error detected when creating a project graph: Failed to create project graph. See above for errors
+[NX Daemon Server] - 2024-09-08T21:19:50.093Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:19:50.095Z - [WATCHER]: src/app/layouts/full/full.component.html was modified
+[NX Daemon Server] - 2024-09-08T21:19:51.338Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:19:52.929Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:19:56.507Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-09-08T21:19:56.508Z - [REQUEST]: src/app/layouts/full/full.component.html
+[NX Daemon Server] - 2024-09-08T21:19:56.508Z - [REQUEST]: 
+
+ NX   Failed to parse npm lockfile
+
+Please open an issue at `https://github.com/nrwl/nx/issues/new?template=1-bug.yml` and provide a reproduction.
+
+Original error: Cannot read properties of undefined (reading 'startsWith')
+
+
+TypeError: Cannot read properties of undefined (reading 'startsWith')
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:179:32)
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:196:12)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:149:40
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:148:45
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:146:15
+    at Array.forEach (<anonymous>)
+    at getDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:136:39)
+    at getNpmLockfileDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:34:12)
+
+[NX Daemon Server] - 2024-09-08T21:19:56.644Z - Error detected when creating a project graph: Failed to create project graph. See above for errors
+[NX Daemon Server] - 2024-09-08T21:20:02.533Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:20:02.535Z - [WATCHER]: src/app/layouts/full/full.component.html was modified
+[NX Daemon Server] - 2024-09-08T21:20:03.298Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:20:03.369Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:20:03.370Z - [WATCHER]: src/app/layouts/full/full.component.html was modified
+[NX Daemon Server] - 2024-09-08T21:20:07.563Z - [WATCHER]: src/app/layouts/full/full.component.html was modified
+[NX Daemon Server] - 2024-09-08T21:20:07.564Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:20:08.267Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:20:08.944Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-09-08T21:20:08.944Z - [REQUEST]: src/app/layouts/full/full.component.html
+[NX Daemon Server] - 2024-09-08T21:20:08.944Z - [REQUEST]: 
+
+ NX   Failed to parse npm lockfile
+
+Please open an issue at `https://github.com/nrwl/nx/issues/new?template=1-bug.yml` and provide a reproduction.
+
+Original error: Cannot read properties of undefined (reading 'startsWith')
+
+
+TypeError: Cannot read properties of undefined (reading 'startsWith')
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:179:32)
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:196:12)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:149:40
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:148:45
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:146:15
+    at Array.forEach (<anonymous>)
+    at getDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:136:39)
+    at getNpmLockfileDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:34:12)
+
+[NX Daemon Server] - 2024-09-08T21:20:09.025Z - Error detected when creating a project graph: Failed to create project graph. See above for errors
+[NX Daemon Server] - 2024-09-08T21:20:09.757Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:20:09.813Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:20:14.425Z - [WATCHER]: src/app/layouts/full/full.component.html was modified
+[NX Daemon Server] - 2024-09-08T21:20:14.426Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:20:15.482Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:20:15.621Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:20:15.622Z - [WATCHER]: src/app/layouts/full/full.component.html was modified
+[NX Daemon Server] - 2024-09-08T21:20:17.186Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:20:18.929Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:20:20.837Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-09-08T21:20:20.837Z - [REQUEST]: src/app/layouts/full/full.component.html
+[NX Daemon Server] - 2024-09-08T21:20:20.837Z - [REQUEST]: 
+
+ NX   Failed to parse npm lockfile
+
+Please open an issue at `https://github.com/nrwl/nx/issues/new?template=1-bug.yml` and provide a reproduction.
+
+Original error: Cannot read properties of undefined (reading 'startsWith')
+
+
+TypeError: Cannot read properties of undefined (reading 'startsWith')
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:179:32)
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:196:12)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:149:40
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:148:45
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:146:15
+    at Array.forEach (<anonymous>)
+    at getDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:136:39)
+    at getNpmLockfileDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:34:12)
+
+[NX Daemon Server] - 2024-09-08T21:20:20.964Z - Error detected when creating a project graph: Failed to create project graph. See above for errors
+[NX Daemon Server] - 2024-09-08T21:20:21.401Z - [WATCHER]: src/app/layouts/full/full.component.html was modified
+[NX Daemon Server] - 2024-09-08T21:20:21.402Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:20:21.581Z - [WATCHER]: src/app/layouts/full/full.component.html was modified
+[NX Daemon Server] - 2024-09-08T21:20:21.582Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:20:27.816Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-09-08T21:20:27.816Z - [REQUEST]: src/app/layouts/full/full.component.html
+[NX Daemon Server] - 2024-09-08T21:20:27.816Z - [REQUEST]: 
+
+ NX   Failed to parse npm lockfile
+
+Please open an issue at `https://github.com/nrwl/nx/issues/new?template=1-bug.yml` and provide a reproduction.
+
+Original error: Cannot read properties of undefined (reading 'startsWith')
+
+
+TypeError: Cannot read properties of undefined (reading 'startsWith')
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:179:32)
+    at findTarget (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:196:12)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:149:40
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:148:45
+    at Array.forEach (<anonymous>)
+    at e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:146:15
+    at Array.forEach (<anonymous>)
+    at getDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:136:39)
+    at getNpmLockfileDependencies (e:\My work\WebbApp\TSP-V1\node_modules\nx\src\plugins\js\lock-file\npm-parser.js:34:12)
+
+[NX Daemon Server] - 2024-09-08T21:20:27.955Z - Error detected when creating a project graph: Failed to create project graph. See above for errors
+[NX Daemon Server] - 2024-09-08T21:21:23.763Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-08T21:21:23.873Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-09T00:52:33.716Z - [WATCHER]: Stopping the watcher for e:\My work\WebbApp\TSP-V1 (sources)
+[NX Daemon Server] - 2024-09-09T00:52:33.717Z - [WATCHER]: Stopping the watcher for e:\My work\WebbApp\TSP-V1 (outputs)
+[NX Daemon Server] - 2024-09-09T00:52:33.725Z - Server stopped because: "10800000ms of inactivity"
+[NX Daemon Server] - 2024-09-13T09:39:15.633Z - Started listening on: \\.\pipe\nx\C:\Users\User\AppData\Local\Temp\4a712bf7717835d5970a\d.sock
+[NX Daemon Server] - 2024-09-13T09:39:15.660Z - [WATCHER]: Subscribed to changes within: e:\My work\WebbApp\TSP-V1 (native)
+[NX Daemon Server] - 2024-09-13T09:39:15.671Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-13T09:39:15.675Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-13T09:39:15.676Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-13T09:39:15.680Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-13T09:39:15.683Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-13T09:39:15.684Z - Handled FORCE_SHUTDOWN. Handling time: 1. Response time: 4.
+[NX Daemon Server] - 2024-09-13T09:39:15.684Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-13T09:39:15.684Z - [WATCHER]: Stopping the watcher for e:\My work\WebbApp\TSP-V1 (sources)
+[NX Daemon Server] - 2024-09-13T09:39:15.685Z - [WATCHER]: Stopping the watcher for e:\My work\WebbApp\TSP-V1 (outputs)

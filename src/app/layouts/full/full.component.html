@@ -16,7 +16,7 @@
     [opened]="!isOver || !isMini"
     (openedChange)="onSidenavOpenedChange($event)"
     (closedStart)="onSidenavClosedStart()"
-    class="sidebarNav"
+    class="sidebarNav" (mouseenter)="onSidenavOpenedHoverEnter()" (mouseleave)="onSidenavOpenedHoverLeave()"
   >
     <app-sidebar></app-sidebar>
   </mat-sidenav>

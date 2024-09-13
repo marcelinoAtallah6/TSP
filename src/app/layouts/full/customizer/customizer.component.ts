@@ -88,13 +88,13 @@ export class CustomizerComponent implements OnInit {
 
   changeContainerFullWidth(){
 
-    document.documentElement.style.setProperty('--boxedWidth', '' );
+    document.documentElement.style.setProperty('--boxedWidth', '1200' );
   }
 
 
   changeContainerBoxedWidth(){
 
-    document.documentElement.style.setProperty('--boxedWidth', '1200' );
+    document.documentElement.style.setProperty('--boxedWidth', '' );
 
 
   }
